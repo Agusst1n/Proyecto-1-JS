@@ -11,6 +11,7 @@ export default ()=>{
         let data = info.data
         // console.log(data)
 
+
             for (let i = 0 ; i < data.length; i++) {
     
                 if(data[i] != data[7]){
@@ -22,7 +23,9 @@ export default ()=>{
     
                     h2.textContent = `${data[i].displayName}` //le agrego contenido al h2
                     // p.textContent = `${data[i].description}` //le agrego contenido al p
-                    img.src = `${data[i].bustPortrait}` //le agrego contenido a la imagen
+                    // img.src = `${data[i].bustPortrait}` //le agrego contenido a la imagen
+                    img.src = `../assets/characters_img/${data[i].uuid}.png`
+                    img.className = 'character_card_img'
                     div_cards.className = 'cards' //le agrego una clase al div card
                     h2.className = 'title' //le agrego una clase al h2
                     p.className = 'description' //le agrego una clase al p
