@@ -11,7 +11,7 @@ console.log(id)
 
 
 export default ()=>{
-
+    //toda via falta trabajo aca
     // const div_card = document.createElement('div')
     fetch(`https://valorant-api.com/v1/agents/${id}`)
     .then(res => res.json())
