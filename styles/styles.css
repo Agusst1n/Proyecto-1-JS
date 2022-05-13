@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*=================================*/
+/*             NAVBAR              */
+/*=================================*/
+
 .header_nav{
     height: 60px;
     width: 100%;
@@ -27,6 +31,9 @@
     color: white;
 }
 
+/*===========================================*===/
+/*           ALGUNOS ESTILOS AL BODY            */
+/*==============================================*/
 body{
     /* background-image: url(../assets/bg.jpg); */
     /* background-image: url(../assets/4-3.svg); */
@@ -164,15 +171,16 @@ div:hover{
     align-items:center;
     flex-wrap: wrap;
     gap: 25px;
+    padding: 80px 0;
 }
 .character_card_img{
     width: 200px;
     height: 300px;
 }
 
-/*=================================*/
-/*          Estadisticas           */
-/*=================================*/
+/*==================================================*/
+/*          Estadisticas DE LOS PERSONAJES          */
+/*==================================================*/
 
 .character_estadistics{
     width: 80%;
