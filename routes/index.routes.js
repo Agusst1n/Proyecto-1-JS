@@ -7,12 +7,14 @@ import overlay from '../overlay/overlay.js'
 import overlay2 from '../overlay/overlay2.js'
 import overlay3 from '../overlay/overlay3.js'
 import script from '../overlay/script.js'
-
+import weaponFetch from  '../pages/armas/armasFetch.js'
+import mapFetch from '../pages/mapas/mapasFetch.js'
 //HOVER
 import hoverAnimation from '../hover/hoverAnimation.js'
 
 let root = document.querySelector('#root')
 const cards = document.querySelector('.cards')
+const cards_weapons = document.querySelector('.cards_weapons')
 
 const router = (route)=>{
 
@@ -113,6 +115,82 @@ const router = (route)=>{
         case '#/add6443a-41bd-e414-f6ad-e58d267f4e95':{//*cuando este en esta ruta jett
             return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
         }
+// ARMAS ------------------------------------------------------------------------------------------------------------------------------------------------------------         
+        case '#/63e6c2b6-4a8e-869c-3d4c-e38355226584':{//*cuando este en esta ruta odin
+            return root.appendChild(weaponFetch())
+        }
+        case '#/55d8a0f4-4274-ca67-fe2c-06ab45efdf58':{//*cuando este en esta ruta ares
+            return root.appendChild(weaponFetch())
+        }
+        case '#/9c82e19d-4575-0200-1a81-3eacf00cf872':{//*cuando este en esta ruta vandal
+            return root.appendChild(weaponFetch())
+        }
+        case '#/ae3de142-4d85-2547-dd26-4e90bed35cf7':{//*cuando este en esta ruta bulldog
+            return root.appendChild(weaponFetch())
+        }
+        case '#/ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a':{//*cuando este en esta ruta phantom
+            return root.appendChild(weaponFetch())
+        }
+        case '#/ec845bf4-4f79-ddda-a3da-0db3774b2794':{//*cuando este en esta ruta judge
+            return root.appendChild(weaponFetch())
+        }
+        case '#/910be174-449b-c412-ab22-d0873436b21b':{//*cuando este en esta ruta bucky
+            return root.appendChild(weaponFetch())
+        }
+        case '#/29a0cfab-485b-f5d5-779a-b59f85e204a8':{//*cuando este en esta ruta classic
+            return root.appendChild(weaponFetch())
+        }        
+        case '#/1baa85b4-4c70-1284-64bb-6481dfc3bb4e':{//*cuando este en esta ruta ghost
+            return root.appendChild(weaponFetch())
+        }        
+        case '#/e336c6b8-418d-9340-d77f-7a9e4cfe0702':{//*cuando este en esta ruta sheriff
+            return root.appendChild(weaponFetch())
+        }
+        case '#/42da8ccc-40d5-affc-beec-15aa47b42eda':{//*cuando este en esta ruta shorty
+            return root.appendChild(weaponFetch())
+        }         
+        case '#/a03b24d3-4319-996d-0f8c-94bbfba1dfc7':{//*cuando este en esta ruta operator
+            return root.appendChild(weaponFetch())
+        }         
+        case '#/4ade7faa-4cf1-8376-95ef-39884480959b':{//*cuando este en esta ruta guardian
+            return root.appendChild(weaponFetch())
+        }         
+        case '#/c4883e50-4494-202c-3ec3-6b8a9284f00b':{//*cuando este en esta ruta marshall
+            return root.appendChild(weaponFetch())
+        }         
+        case '#/462080d1-4035-2937-7c09-27aa2a5c27a7':{//*cuando este en esta ruta spectre
+            return root.appendChild(weaponFetch())
+        }               
+        case '#/f7e1b454-4ad4-1063-ec0a-159e56b58941':{//*cuando este en esta ruta stinger
+            return root.appendChild(weaponFetch())
+        }                         
+        case '#/2f59173c-4bed-b6c3-2191-dea9b58be9c7':{//*cuando este en esta ruta cuchillo
+            return root.appendChild(weaponFetch())
+        }
+
+
+// MAPAS------------------------------------------------------
+        case '#/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319':{//* cuando este en esta ruta ASCENT
+            return root.appendChild(mapFetch())
+        }
+        case '#/d960549e-485c-e861-8d71-aa9d1aed12a2':{//* cuando este en esta ruta SPLIT
+            return root.appendChild(mapFetch())
+        }               
+        case '#/b529448b-4d60-346e-e89e-00a4c527a405':{//* cuando este en esta ruta FRACTURE
+            return root.appendChild(mapFetch())
+        }               
+        case '#/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba':{//* cuando este en esta ruta BIND
+            return root.appendChild(mapFetch())
+        }               
+        case '#/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53':{//* cuando este en esta ruta BREEZE
+            return root.appendChild(mapFetch())
+        }               
+        case '#/e2ad5c54-4114-a870-9641-8ea21279579a':{//* cuando este en esta ruta ICEBOX
+            return root.appendChild(mapFetch())
+        }               
+        case '#/ee613ee9-28b7-4beb-9666-08db13bb2244':{//* cuando este en esta ruta THE RANGE
+            return root.appendChild(mapFetch())
+        }                                                                         
         default: return console.log('404 Notfound ')
     }
     
