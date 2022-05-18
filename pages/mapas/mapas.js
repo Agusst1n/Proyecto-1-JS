@@ -26,7 +26,7 @@ export default ()=>{
                 img.src = `${data[i].splash}` //le agrego contenido a la imagen
                 // img.src = `../assets/characters_img/${data[i].uuid}.png`
                 img.className = 'mapa_card_img'
-                div_cards.className = 'cards' //le agrego una clase al div card
+                div_cards.className = 'cards_maps' //le agrego una clase al div card
                 h2.className = 'title' //le agrego una clase al h2
                 p.className = 'description' //le agrego una clase al p
                 a.setAttribute("href", `#/${data[i].uuid}`) //le digo al 'a' que la ruta a la que me va a dirigir es el id del personaje

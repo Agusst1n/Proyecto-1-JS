@@ -5,7 +5,12 @@
 export default ()=>{
 
     const home = `
+    
+        <section class="section-title">
+            <h1 class="section_h1_title" >VALORANT API </h1>
+        </section>
         <section id="home">
+        
             <a href='#/armas'>
                 <div class="card one" >   
                 </div>
@@ -19,6 +24,7 @@ export default ()=>{
                 </div>  
             </a>  
         </section>
+   
     `;
 
     // const hoverDistort = new hoverEffectUmd({
