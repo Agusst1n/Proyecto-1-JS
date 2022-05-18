@@ -8,7 +8,6 @@ export default ()=>{
         <section id="home">
             <a href='#/armas'>
                 <div class="card one" >   
-                    <h1>Armas</h1>
                 </div>
             </a>
             <a href='#/personajes'>
@@ -17,7 +16,6 @@ export default ()=>{
             </a>
             <a href='#/mapas'>
                 <div class="card three">
-                    <h1>Mapas</h1>
                 </div>  
             </a>  
         </section>

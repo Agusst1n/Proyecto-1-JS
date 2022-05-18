@@ -7,6 +7,7 @@ let container_characters = document.querySelector('container_characters')
 
     router(window.location.hash)
 window.addEventListener('hashchange', () =>{
+    
     router(window.location.hash)
 
 })

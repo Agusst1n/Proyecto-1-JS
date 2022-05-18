@@ -1,7 +1,5 @@
 import characters from '../pages/personajes/characters.js'
 import home from '../pages/home.js'
-import armas from '../pages/armas/armas.js'
-import mapas from '../pages/mapas/mapas.js'
 import characterFetch from '../pages/personajes/characterFetch.js' //importo el caracterFetch
 import overlay from '../overlay/overlay.js'
 import overlay2 from '../overlay/overlay2.js'
@@ -10,8 +8,16 @@ import script from '../overlay/script.js'
 
 //HOVER
 import hoverAnimation from '../hover/hoverAnimation.js'
+// import hoverAnimation2 from '../hover/hoverAnimation2.js'
 
+//MAPAS
+import mapas from '../pages/mapas/mapas.js'
+import mapasFetch from '../pages/mapas/mapasFetch.js'
 let root = document.querySelector('#root')
+
+//ARMAS
+import armas from '../pages/armas/armas.js'
+import armasFetch from '../pages/armas/armasFetch.js'
 const cards = document.querySelector('.cards')
 
 const router = (route)=>{
@@ -19,6 +25,9 @@ const router = (route)=>{
     root.textContent = '' //lo que hace es que cada vez que entre no se vuelva a pintar lo mismo una y otra vez
 
     switch (route){
+
+        //!CASE HOME
+
         case '#/':{ // si esta en la ruta principal quiero que
             // root.appendChild(overlay());
             document.body.appendChild(overlay())
@@ -28,15 +37,6 @@ const router = (route)=>{
             document.body.appendChild(hoverAnimation()) //le digo que las cards van a tener la animacion del hover
             document.body.appendChild(script()) //y aca esta su script para que funcionen
             break;
-        }
-        case '#/dade69b4-4f5a-8528-247b-219e5a1facd6':{  //*cuando este en esta ruta fade
-            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
-        }
-        case '#/5f8d3a7f-467b-97f3-062c-13acf203c006':{ //*cuando este en esta ruta breach
-            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
-        }
-        case '#/f94c3b30-42be-e959-889c-5aa313dba261':{ //*cuando este en esta ruta raze
-            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
         }
         case '#/armas':{//cuando este en la ruta armas
             document.body.appendChild(overlay()) 
@@ -61,6 +61,17 @@ const router = (route)=>{
             root.appendChild(mapas())//agrego al root el componente mapas
             document.body.appendChild(script())//este script hace que los overlay funcionen
             break;
+        }
+        
+        //!CASE DE LOS PERSONAJES
+        case '#/dade69b4-4f5a-8528-247b-219e5a1facd6':{  //*cuando este en esta ruta fade
+            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
+        }
+        case '#/5f8d3a7f-467b-97f3-062c-13acf203c006':{ //*cuando este en esta ruta breach
+            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
+        }
+        case '#/f94c3b30-42be-e959-889c-5aa313dba261':{ //*cuando este en esta ruta raze
+            return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
         }
         case '#/333':{ //ruta de prueba
             return root.appendChild(characterFetch())
@@ -113,6 +124,96 @@ const router = (route)=>{
         case '#/add6443a-41bd-e414-f6ad-e58d267f4e95':{//*cuando este en esta ruta jett
             return root.appendChild(characterFetch())//me va agregar al root el componente charactersFetch el cual trae todos los datos de ese personaje
         }
+
+        //!CASE DE LOS MAPAS
+
+        case '#/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/d960549e-485c-e861-8d71-aa9d1aed12a2':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/b529448b-4d60-346e-e89e-00a4c527a405':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/e2ad5c54-4114-a870-9641-8ea21279579a':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/ee613ee9-28b7-4beb-9666-08db13bb2244':{
+            return root.appendChild(mapasFetch())
+        }
+        case '#/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047':{
+            return root.appendChild(mapasFetch())
+        }
+
+        //!CASE ARMAS
+
+        case '#/63e6c2b6-4a8e-869c-3d4c-e38355226584':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/55d8a0f4-4274-ca67-fe2c-06ab45efdf58':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/9c82e19d-4575-0200-1a81-3eacf00cf872':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/ae3de142-4d85-2547-dd26-4e90bed35cf7':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/ec845bf4-4f79-ddda-a3da-0db3774b2794':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/910be174-449b-c412-ab22-d0873436b21b':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/44d4e95c-4157-0037-81b2-17841bf2e8e3':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/29a0cfab-485b-f5d5-779a-b59f85e204a8':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/1baa85b4-4c70-1284-64bb-6481dfc3bb4e':{
+            return root.appendChild(armasFetch())
+        }
+
+
+        //--------------------
+
+        case '#/e336c6b8-418d-9340-d77f-7a9e4cfe0702':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/42da8ccc-40d5-affc-beec-15aa47b42eda':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/a03b24d3-4319-996d-0f8c-94bbfba1dfc7':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/4ade7faa-4cf1-8376-95ef-39884480959b':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/c4883e50-4494-202c-3ec3-6b8a9284f00b':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/462080d1-4035-2937-7c09-27aa2a5c27a7':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/f7e1b454-4ad4-1063-ec0a-159e56b58941':{
+            return root.appendChild(armasFetch())
+        }
+        case '#/2f59173c-4bed-b6c3-2191-dea9b58be9c7':{
+            return root.appendChild(armasFetch())
+        }
+
+
         default: return console.log('404 Notfound ')
     }
     
