@@ -6,7 +6,7 @@ let id = urlActual.slice(2,38) //con el slice le saco los 2 primeros caracteres 
 console.log(id)
 
 
-export default ()=>{
+export default (id)=>{
     //toda via falta trabajo aca
     // const div_card = document.createElement('div')
     fetch(`https://valorant-api.com/v1/weapons/${id}`)

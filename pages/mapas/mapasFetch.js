@@ -3,10 +3,10 @@
 const urlActual = window.location.hash //con esto obtengo la URL Actual
 console.log(urlActual)
 let id = urlActual.slice(2,38) //con el slice le saco los 2 primeros caracteres que son un '#/'
-console.log(id)
+// console.log(id)
 
 
-export default ()=>{
+export default (id)=>{
     //toda via falta trabajo aca
     // const div_card = document.createElement('div')
     fetch(`https://valorant-api.com/v1/maps/${id}`)
@@ -14,7 +14,7 @@ export default ()=>{
     .then(info => {
         let data =info.data
         console.log(data)
-        console.log(data.displayName)
+        // console.log(data.displayName)
         
 
         let div_card = document.createElement('div') //creo un div

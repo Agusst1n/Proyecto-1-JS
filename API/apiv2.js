@@ -10,3 +10,12 @@
 // }
 
 // export {fetchAPI}
+
+// const urlActual = window.location.hash //con esto obtengo la URL Actual
+// console.log(urlActual)
+// let id = urlActual.slice(2,38) //con el slice le saco los 2 primeros caracteres que son un '#/'
+// console.log(id, 'el ide')
+
+
+// let prueba=armasFetch(id)
+// return root.appendChild(prueba)

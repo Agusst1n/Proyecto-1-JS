@@ -11,9 +11,14 @@ console.log(id)
 
 
 
-export default ()=>{
+export default (id)=>{
+
+    let root = document.getElementById('root')
+    root.innerText = ''
     //toda via falta trabajo aca
     // const div_card = document.createElement('div')
+
+    
     fetch(`https://valorant-api.com/v1/agents/${id}`)
     .then(res => res.json())
     .then(info => {
