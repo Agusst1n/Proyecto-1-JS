@@ -13,7 +13,7 @@ export default (id)=>{
     .then(res => res.json())
     .then(info => {
         let data =info.data
-        // console.log(data)
+        console.log(data, 'data mapas')
         // console.log(data.displayName)
         
 
@@ -22,6 +22,7 @@ export default (id)=>{
         div_image.className = 'div_map_card_img' //le asigno una clase, este div va a contener la imagen
         div_card.className = 'card_maps_estadistics' // y este div va a contener los datos del personaje
         let img = document.createElement('img') //creo una img
+        let img2 = document.createElement('img')
         let p = document.createElement('p')//creo un p
         let h2 = document.createElement('h2')//creo un h2
         let h4 = document.createElement('h4')//creo un h4
@@ -34,10 +35,13 @@ export default (id)=>{
         console.log(id, 'id')
         img.src = `${data.splash}` //le asigno contenido a la img
         img.className = 'maps_img' //le asigno una clase
+        img2.className = 'img_icon'
+        img2.src = `${data.displayIcon}`
         div_card.appendChild(h2) //le agreo el h2
         div_card.appendChild(h4) //le agrego el h4
         // div.appendChild(img)
         div_image.appendChild(img) //le agrego la imagen
+        div_image.appendChild(img2) //le agrego la imagen
         div.appendChild(div_image) //agrego el div que contniene la imagen en otro div padre
         div.appendChild(div_card) //agrego el div que contiene la informacion en el mismo div padre
 

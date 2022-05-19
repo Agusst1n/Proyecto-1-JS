@@ -16,6 +16,7 @@ export default ()=>{
                 top: "-120%",
                 ease: Expo.easeInout
             })
+            
     `;
 
 

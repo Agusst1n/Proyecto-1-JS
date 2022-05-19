@@ -23,6 +23,8 @@ export default ()=>{
             image2: '../assets/imgArma2.jpg',
             displacementImage: '../assets/7.jpg'
         });
+
+
     `;
 
 

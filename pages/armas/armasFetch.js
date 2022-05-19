@@ -20,6 +20,8 @@ export default (id)=>{
         let div_card = document.createElement('div') //creo un div
         let div_image = document.createElement('div') //creo otro div
         let div_skins = document.createElement('div') 
+        let div_contain_skins = document.createElement('div')
+        let div_title_skins = document.createElement('div')
         let armas_contain = document.createElement('div') 
         armas_contain.className = 'armas_contain' // y este div va a contener los datos del personaje
         div_image.className = 'div_arma_card_img' //le asigno una clase, este div va a contener la imagen
@@ -30,6 +32,8 @@ export default (id)=>{
         let h4_v2 = document.createElement('h4')//creo un h4
         let h4_v3 = document.createElement('h4')//creo un h4
         let h4_v4 = document.createElement('h4')//creo un h4
+        let h2_v2 = document.createElement('h2')//creo un h4
+
 
 
 
@@ -42,6 +46,7 @@ export default (id)=>{
         h4_v2.textContent = `Cost: ${data.shopData.cost}`
         h4_v3.textContent = `Damage: [Body damage ${data.weaponStats.damageRanges[0].bodyDamage}] [Head damage ${data.weaponStats.damageRanges[0].headDamage}] [Leg damage ${data.weaponStats.damageRanges[0].legDamage}]`
         h4_v4.textContent = `Reload time: ${data.weaponStats.reloadTimeSeconds}s `
+        h2_v2.textContent = 'Popular skins'
         // img.src = `${data.bustPortrait}`
         console.log(id, 'id')
         img.src = `${data.displayIcon}` //le asigno contenido a la img
@@ -54,6 +59,8 @@ export default (id)=>{
 
         //*DIV SKINS
         div_skins.className = 'card_arma_skin'
+        div_contain_skins.className = 'div_contain_skin'
+        div_title_skins.className = 'div_title_skins'
         let img_skins = document.createElement('img') //creo una img
         img_skins.className = 'arma_skin_img' //le asigno una clase
         img_skins.src = `${data.skins[0].displayIcon}` //le asigno contenido a la img
@@ -65,10 +72,14 @@ export default (id)=>{
         let img_skins3 = document.createElement('img') //creo una img
         img_skins3.className = 'arma_skin_img' //le asigno una clase
         img_skins3.src = `${data.skins[3].displayIcon}` //le asigno contenido a la img
-        
-        div_skins.appendChild(img_skins)
-        div_skins.appendChild(img_skins2)
-        div_skins.appendChild(img_skins3)
+
+        div_title_skins.appendChild(h2_v2)
+        div_skins.appendChild(div_title_skins)
+        div_skins.appendChild(div_contain_skins)
+        div_contain_skins.appendChild(img_skins)
+        div_contain_skins.appendChild(img_skins2)
+        div_contain_skins.appendChild(img_skins3)
+
 
 
         

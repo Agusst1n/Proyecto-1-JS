@@ -6,8 +6,19 @@ export default ()=>{
 
     const home = `
     
-        <section class="section-title">
-            <h1 class="section_h1_title" >VALORANT API </h1>
+        <section class="section-title" id="id_section">
+            <div class="content">
+                <h2 class="text " data-text="VALORANT API" >VALORANT API</h2>
+            </div>
+            <div class="arrow">
+                <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <line x1="8" y1="12" x2="12" y2="16" />
+                <line x1="12" y1="8" x2="12" y2="16" />
+                <line x1="16" y1="12" x2="12" y2="16" />
+                </svg></a>
+            </div>
         </section>
         <section id="home">
         
@@ -27,13 +38,13 @@ export default ()=>{
    
     `;
 
-    // const hoverDistort = new hoverEffectUmd({
-    //     parent: document.querySelector('.one'),
-    //     intesity: 0.5,
-    //     image1: '../assets/image1.jpg',
-    //     image2: '../assets/image2.jpg',
-    //     displacementImage: '4.png'
-    // })
+    let play = document.querySelector('.play')
+    let sonido = new Audio(); //creo un sonido
+    sonido.src = `../sounds/fadeAudio.mp3` 
+    
+    play.addEventListener('click', ()=>{
+        sonido.play();
+    })
 
     const div = document.createElement('div');
     div.className = 'div_section'
