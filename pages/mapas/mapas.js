@@ -9,7 +9,7 @@ export default ()=>{
 .   then(res => res.json())
     .then(info => {
         let data = info.data
-        console.log(data, 'data mapas')
+        // console.log(data, 'data mapas')
 
 
 
