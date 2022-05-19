@@ -21,9 +21,11 @@
     display: flex;
     list-style: none;
     gap: 10px;
+    justify-content: flex-end;
 }
 .nav_item{
     color: white;
+    justify-content: flex-end;
 }
 .nav_link{
     font-size:1.3em;
@@ -429,4 +431,22 @@ div:hover{
 .arma_skin_img{
     width: 400px;
     height: auto;
+}
+
+/* -------------------------- */
+/*-------- VOLUMEN -----------*/
+/* -------------------------- */
+
+.volume{
+    width:25px;
+    height: auto;
+    background-color:white;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+   
+
+
+
 }
