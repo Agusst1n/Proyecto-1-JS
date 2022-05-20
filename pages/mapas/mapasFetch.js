@@ -26,11 +26,13 @@ export default (id)=>{
         let p = document.createElement('p')//creo un p
         let h2 = document.createElement('h2')//creo un h2
         let h4 = document.createElement('h4')//creo un h4
+        let h4_v2 = document.createElement('h4')
    
 
         // h4.textContent = `Role: ${data.role.displayName}` //le asigno contenido al h4
         // console.log(data.role.displayName)
         h2.textContent = `${data.displayName}` //le asigno contenido al h2
+        h4_v2.textContent = `Coordinates: ${data.coordinates}`
         // img.src = `${data.bustPortrait}`
         console.log(id, 'id')
         img.src = `${data.splash}` //le asigno contenido a la img
@@ -39,6 +41,7 @@ export default (id)=>{
         img2.src = `${data.displayIcon}`
         div_card.appendChild(h2) //le agreo el h2
         div_card.appendChild(h4) //le agrego el h4
+        div_card.appendChild(h4_v2) //le agreo el h2
         // div.appendChild(img)
         div_image.appendChild(img) //le agrego la imagen
         div_image.appendChild(img2) //le agrego la imagen

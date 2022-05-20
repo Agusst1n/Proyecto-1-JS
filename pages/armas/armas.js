@@ -21,6 +21,11 @@ export default ()=>{
                 const img = document.createElement('img') //creo un img
                 const a = document.createElement('a') //creo un a
 
+
+                // const fav = document.createElement('INPUT');
+                // fav.setAttribute("type","checkbox");
+                // fav.className = 'fav_icon'
+
                 h2.textContent = `${data[i].displayName}` //le agrego contenido al h2
                 // p.textContent = `${data[i].description}` //le agrego contenido al p
                 img.src = `${data[i].displayIcon}` //le agrego contenido a la imagen
@@ -34,6 +39,7 @@ export default ()=>{
                 
                 
                 div_cards.appendChild(h2) //le agrego el h2 al div card
+                // div_cards.appendChild(fav)
                 // div_cards.appendChild(p) //le agrego el p al div card
                 a.appendChild(img) //envuelvo la imagen en un 'a'
                 div_cards.appendChild(a) //le agrego el 'a' al div card
@@ -48,9 +54,15 @@ export default ()=>{
                    console.log(id)
                 }
                 
+
+
                 div_cards.onmouseenter=()=>{ //le digo al div card que al ser clickeado tire unos console.log
-                   h2.classList.toggle('active')
+                   h2.style.opacity = "1"
                  }
+                 
+                div_cards.onmouseleave=()=>{ //le digo al div card que al ser clickeado tire unos console.log
+                    h2.style.opacity = "0"
+                  }
                 // container.appendChild(div)
                 // characters.appendChild(div)
                 div.appendChild(div_cards) //!agrego el div de las cards a otro div, ese div es usado abajo

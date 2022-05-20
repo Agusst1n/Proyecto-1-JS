@@ -49,8 +49,11 @@ export default ()=>{
                 }
                 
                 div_cards.onmouseenter=()=>{ //le digo al div card que al ser clickeado tire unos console.log
-                   h2.classList.toggle('active')
-                 }
+                   h2.style.opacity = "1"
+                }
+                div_cards.onmouseleave=()=>{ //le digo al div card que al ser clickeado tire unos console.log
+                   h2.style.opacity = "0"
+                }
                 // container.appendChild(div)
                 // characters.appendChild(div)
                 div.appendChild(div_cards) //!agrego el div de las cards a otro div, ese div es usado abajo
